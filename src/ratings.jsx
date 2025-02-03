@@ -16,7 +16,7 @@ const StarRating = ({ totalStars = 5, initialRating = 0, onRatingChange }) => {
           <span
             key={index}
             className={`text-3xl transition-colors ${
-              starValue <= rating ? 'text-yellow-500' : 'text-gray-600'
+              starValue <= rating ? 'text-blue-500' : 'text-gray-500'
             } hover:text-yellow-400 w-[6vh]`}
             onClick={() => handleRating(starValue)}
             

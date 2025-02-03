@@ -33,7 +33,7 @@ const ProjectForm = () => {
           "Content-Type": "multipart/form-data", 
         },
       });
-      alert("Event uploaded successfully!");
+      alert("project uploaded successfully!");
       setProjectData({
         title: "",
         description: "",

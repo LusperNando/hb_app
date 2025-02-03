@@ -3,6 +3,7 @@ import star from "./images/Star 1.svg";
 import Navigation from "./nav";
 import axios from "axios";
 import Footer from "./Footer";
+import { FaStar } from "react-icons/fa";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -38,29 +39,29 @@ const Events = () => {
 
       <div className="ml-4 sm:ml-[37vh]">
         <div className="flex flex-row mt-12">
-          <img src={star} alt="star" width={30} height={24} className="absolute mt-2" />
-          <p className="font-Poppins text-[3.5vh] font-bold ms-8 text-red-500">Our Events</p>
+          <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-3 md:mt-2" />
+          <p className="font-Poppins text-[3.5vh] font-bold ms-1 text-[#330386]">Our Events</p>
         </div>
         <div className="flex flex-col mt-8 ml-3">
-          <label htmlFor="search" className="text-gray-600 text-[2.4vh] my-2">
+          <label htmlFor="search" className="text-gray-800 text-[2.4vh] my-2">
             Search
           </label>
           <input
             type="text"
             id="search"
             placeholder="Search for events"
-            className="w-[40vh] sm:w-[120vh] md:p-3 p-2 border border-gray-300 md:rounded rounded-lg"
+            className="w-[40vh] sm:w-[120vh] md:p-3 p-2 border text-gray-800  border-gray-300 focus:outline-none focus:border-blue-500 md:rounded rounded-lg"
           />
         </div>
       </div>
 
 
       <div className="flex justify-center font-Poppins font-medium mt-6 ">
-        <div className="flex flex-row">
-          <img src={star} alt="star" width={26} height={20} className="absolute mt-1" />
-          <h1 className="text-gray-600 text-[2.5vh] font-regular ms-8">
+        <div className="flex flex-row mr-2">
+          <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-1" />
+          <h1 className="text-gray-800 text-[2.5vh] font-medium ms-1">
             Upcoming Events at{" "}
-            <label className="text-red-500 font-bold">Hb Space Tl</label>
+            <label className="text-[#330386] font-bold">Hb Space Tl</label>
           </h1>
         </div>
       </div>
@@ -77,7 +78,7 @@ const Events = () => {
                 <img
                   src={`${BASE_URL}/${event.imageurl}`}
                   alt={event.title}
-                  className="object-cover rounded-lg h-[30vh] w-full"
+                  className="object-cover border-t-4 border-b-4 border-[#1E024D] rounded-lg h-[30vh] w-full"
                   onError={(e) => {
                     e.target.alt = "Image not found";
                   }}

@@ -3,17 +3,14 @@ import polygon from './images/Polygon.svg';
 
 const ScrollingText = () => {
   return (
-    <div className="flex justify-between absolute ml-[90%] md:mr-[28vh] md:overflow-hidden overflow-hidden whitespace-nowrap text-gray-600 w-full">
-      <div className="animate-scroll hover:animate-none space-y-4">
+    <div className="flex justify-between rounded-lg md:shadow-md absolute md:ml-[90%] md:mr-[145vh] bg-gradient-to-r from-blue-50 to-purple-50 h-[34vh] md:w-[80vh] md:overflow-hidden overflow-hidden whitespace-nowrap text-gray-800 w-[42vh] mr-4 md:border-none  border-r-2 border-l-2 border-[#1E024D] ">
+      <div className="animate-scroll hover:animate-none ml-2 md:ml-1 space-y-4 w-[90vh]">
         <div className="flex flex-row items-center gap-x-2">
           <img src={polygon} alt="pointer" className="w-4 md:w-6" />
           <div className="flex flex-col md:flex-row items-start md:items-center gap-x-4">
             <p className="font-Poppins font-regular text-sm md:text-base">
               Hb Space Tl launched...
             </p>
-            <button className="font-Poppins font-medium text-sm text-[#F40404]">
-              see more
-            </button>
           </div>
         </div>
       
@@ -23,9 +20,6 @@ const ScrollingText = () => {
             <p className="font-Poppins font-regular text-sm md:text-base">
               On the launch we had Incubator...
             </p>
-            <button className="font-Poppins font-medium text-sm text-[#F40404]">
-              see project
-            </button>
           </div>
         </div>
         
@@ -35,9 +29,6 @@ const ScrollingText = () => {
             <p className="font-Poppins font-regular text-sm md:text-base">
               On the launch we had Smart bin...
             </p>
-            <button className="font-Poppins font-medium text-sm text-[#F40404]">
-              see project
-            </button>
           </div>
         </div>
   
@@ -47,9 +38,6 @@ const ScrollingText = () => {
             <p className="font-Poppins font-regular text-sm md:text-base">
               On the launch we had obstacle...
             </p>
-            <button className="font-Poppins font-medium text-sm text-[#F40404]">
-              see project
-            </button>
           </div>
         </div>
   
@@ -59,9 +47,6 @@ const ScrollingText = () => {
             <p className="font-Poppins font-regular text-sm md:text-base">
               On the launch we had premises...
             </p>
-            <button className="font-Poppins font-medium text-sm text-[#F40404]">
-              see project
-            </button>
           </div>
         </div>
       </div>

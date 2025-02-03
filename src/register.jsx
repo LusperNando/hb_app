@@ -4,6 +4,7 @@ import axios from "axios";
 import star from "./images/Star 1.svg";
 import Navigation from "./nav";
 import Footer from "./Footer";
+import { FaStar } from "react-icons/fa";
 
 const Account = () => {
   const navigate = useNavigate();
@@ -101,12 +102,12 @@ const Account = () => {
         onSubmit={handlesubmit}
         className="flex justify-center items-center px-4 sm:px-0 mt-8 sm:mt-12 flex-grow mb-12"
       >
-        <div className="border-t-2 border-b-2 border-red-500 w-full max-w-[90%] sm:max-w-[35%] md:max-w-[40%] lg:max-w-[42%] shadow-xl rounded-lg bg-white md:mb-0 mb-8">
+        <div className="border-t-2 border-b-2 border-[#1E024D] w-full max-w-[90%] sm:max-w-[35%] md:max-w-[40%] lg:max-w-[42%] shadow-xl rounded-lg bg-white md:mb-0 mb-8">
         
           <div className=" p-4 text-center ">
             <div className="flex justify-start items-center ml-1">
-              <img src={star} alt="star" width={26} height={24} className="mr-1" />
-              <p className="font-Poppins font-bold text-xl sm:text-2xl text-red-500 ">
+              <FaStar className="text-2xl text-[#1E024D] shadow-lg"/>
+              <p className="font-Poppins font-bold ms-1 text-xl sm:text-2xl text-[#330386] ">
                 REGISTER
               </p>
             </div>
@@ -116,7 +117,7 @@ const Account = () => {
           <div className="p-6">
     
             <div className="mb-4">
-              <label className="flex justify-start font-Poppins font-medium text-sm sm:text-md text-gray-600">
+              <label className=" text-gray-800 flex justify-start font-Poppins font-medium text-sm sm:text-md">
                 Enter Your Name
               </label>
               <input
@@ -126,13 +127,13 @@ const Account = () => {
                 required
                 placeholder="Enter your full name"
                 onChange={handlechange}
-                className="font-medium text-sm sm:text-md text-gray-800 border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-red-500 w-full rounded"
+                className="font-medium text-sm text-gray-800 sm:text-md border border-gray-300 p-2 focus:outline-none focus:border-blue-500 w-full rounded"
               />
             </div>
 
     
             <div className="mb-4">
-              <label className="flex justify-start font-Poppins font-medium text-sm sm:text-md text-gray-600">
+              <label className="flex text-gray-800 justify-start font-Poppins font-medium text-sm sm:text-md">
                 Enter Your Email
               </label>
               <input
@@ -142,13 +143,13 @@ const Account = () => {
                 required
                 placeholder="example@gmail.com"
                 onChange={handlechange}
-                className="font-medium text-sm sm:text-md text-gray-800 border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-red-500 w-full rounded"
+                className="font-medium text-sm sm:text-md text-gray-800 border border-gray-300 p-2 focus:outline-none focus:border-blue-500 w-full rounded"
               />
             </div>
 
     
             <div className="mb-4">
-              <label className="flex justify-start font-Poppins font-medium text-sm sm:text-md text-gray-600">
+              <label className="flex text-gray-800 justify-start font-Poppins font-medium text-sm sm:text-md">
                 Mobile Number
               </label>
               <input
@@ -158,13 +159,13 @@ const Account = () => {
                 required
                 placeholder="Enter your mobile number"
                 onChange={handlechange}
-                className="font-medium text-sm sm:text-md text-gray-800 border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-red-500 w-full rounded"
+                className="font-medium text-sm sm:text-md text-gray-800 border border-gray-300 p-2 focus:outline-none focus:border-blue-500 w-full rounded"
               />
             </div>
 
       
             <div className="mb-4">
-              <label className="flex justify-start font-Poppins font-medium text-sm sm:text-md text-gray-600">
+              <label className="flex text-gray-800 justify-start font-Poppins font-medium text-sm sm:text-md">
                 Password
               </label>
               <input
@@ -175,7 +176,7 @@ const Account = () => {
                 onChange={handlePasswordChange}
                 className={`font-medium text-sm sm:text-md text-gray-800 border ${
                   error ? "border-red-500" : "border-gray-300"
-                } p-2 focus:outline-none focus:ring-2 ${
+                } p-2 focus:outline-none focus:ring-1 ${
                   error ? "focus:ring-red-500" : "focus:ring-blue-500"
                 } w-full rounded`}
               />
@@ -194,7 +195,7 @@ const Account = () => {
                 onChange={handleConfirmPasswordChange}
                 className={`font-medium text-sm sm:text-md text-gray-800 border ${
                   confirmError ? "border-red-500" : "border-gray-300"
-                } p-2 focus:outline-none focus:ring-2 ${
+                } p-2 focus:outline-none focus:ring-1 ${
                   confirmError ? "focus:ring-red-500" : "focus:ring-blue-500"
                 } w-full rounded`}
               />
@@ -206,18 +207,18 @@ const Account = () => {
     
             <button
               type="submit"
-              className="font-medium hover:bg-gray-200 border hover:border-red-500 bg-red-500 p-2 hover:text-red-500 focus:outline-none focus:ring-1 text-white w-full rounded"
+              className="font-medium bg-gradient-to-r from-[#330386] to-purple-900  hover:from-purple-900 p-2 hover:to-[#330386] focus:outline-none focus:ring-1 text-white w-full rounded"
             >
               REGISTER
             </button>
 
-            {/* Login Link */}
+    
             <div className="flex justify-center mt-4">
               <label className="font-Poppins font-regular text-sm sm:text-base text-gray-800">
                 Already have an account?
                 <Link
                   to="/signin"
-                  className="ml-1 font-medium hover:text-red-500"
+                  className="ml-1 font-medium hover:text-[#330386]"
                 >
                   Login here
                 </Link>
@@ -227,7 +228,7 @@ const Account = () => {
         </div>
       </form>
 
-      {/* Footer */}
+  
       <div className="mt-auto">
         <Footer />
       </div>

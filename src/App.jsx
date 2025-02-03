@@ -10,10 +10,12 @@ import InternshipApk from './internshipApk';
 import ProtectedRoute from './protectedRoute';
 import Projects from './projects';
 import ProjectDetails from './projectDetails';
+import { useAuth } from './AuthContext';
 
 
 
 function App() {
+  const { isAuthenticated } =useAuth();
   return (
     <Router>
       <div className="App">
@@ -26,13 +28,22 @@ function App() {
           <Route path="/intern"element={<Internship/>}/>
           <Route path="/project"element={<Projects/>}/>
 
-          <Route element={<ProtectedRoute/>}>
-           <Route path="/apply"element={<InternshipApk/>}/>
-          </Route>
-
-          <Route element={<ProtectedRoute/>}>
-           <Route path="/project/:id"element={<ProjectDetails/>}/>
-          </Route>
+          <Route
+          path="/apply"
+          element={
+            <ProtectedRoute>
+              <InternshipApk />
+            </ProtectedRoute>
+           }
+          />
+          <Route
+          path="/project/:id"
+          element={
+            <ProtectedRoute>
+              <ProjectDetails />
+            </ProtectedRoute>
+           }
+          />
           
 
         </Routes>

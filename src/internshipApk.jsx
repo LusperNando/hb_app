@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Navigation from "./nav";
 import Footer from "./Footer";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const InternshipApk = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -85,12 +87,12 @@ const InternshipApk = () => {
       <form onSubmit={handleSubmit}>
         <div className="ml-4 sm:ml-[10vh]">
           <div className="flex justify-center">
-          <h1 className="font-Poppins text-red-500 font-bold mt-8 mb-2 md:mr-[7vh] md:text-[3vh]">APPLY HERE!!!</h1>
+          <h1 className="font-Poppins text-blue-500 font-bold mt-8 mb-2 md:mr-[7vh] md:text-[3vh]">APPLY HERE!!!</h1>
           </div>
-          <div className=" ml-12 sm:ml-[75vh] border-t-2 border-red-500 w-[30vh]  rounded-full"></div>
+          <div className=" ml-12 sm:ml-[75vh] border-t-2 border-blue-500 w-[30vh] animate-ping rounded-full"></div>
 
   
-          <div className="flex flex-col sm:flex-row bg-white bg-center mt-10">
+          <div className="text-gray-800 flex flex-col sm:flex-row bg-white bg-center mt-10">
             <div className="mb-4 sm:mb-0">
               <label className="block mb-1 font-Poppins text-lg font-regular">Name:</label>
               <input
@@ -99,7 +101,7 @@ const InternshipApk = () => {
                 name="name"
                 placeholder="Full Name"
                 required
-                className="shadow rounded-full text-md text-black font-semibold font-Poppins border p-3 w-full sm:w-[45vh]"
+                className="rounded-full text-md text-gray-800 font-semibold font-Poppins border border-gray-300 focus:outline-none focus:border-blue-500 p-3 w-full sm:w-[45vh]"
               />
             </div>
             <div className="mb-4 sm:mb-0 sm:ml-8">
@@ -110,7 +112,7 @@ const InternshipApk = () => {
                 name="phone"
                 placeholder="Mobile No:"
                 required
-                className="shadow rounded-full text-md text-black font-semibold font-Poppins border p-3 w-full sm:w-[45vh]"
+                className=" rounded-full text-md font-semibold font-Poppins border  border-gray-300 focus:outline-none focus:border-blue-500 p-3 w-full sm:w-[45vh]"
               />
             </div>
             <div className="mb-4 sm:mb-0 sm:ml-8">
@@ -121,7 +123,7 @@ const InternshipApk = () => {
                 name="email"
                 placeholder="Email:"
                 required
-                className="shadow rounded-full text-md text-black font-semibold font-Poppins border p-3 w-full sm:w-[45vh]"
+                className="rounded-full text-md  border-gray-300 focus:outline-none focus:border-blue-500 font-semibold font-Poppins border p-3 w-full sm:w-[45vh]"
               />
             </div>
           </div>
@@ -136,7 +138,7 @@ const InternshipApk = () => {
                 name="college"
                 placeholder="Optional"
                 required
-                className="shadow rounded-full text-md font-Poppins text-black font-semibold border p-3 w-full sm:w-[45vh]"
+                className="rounded-full text-md font-Poppins  border-gray-300 focus:outline-none focus:border-blue-500 font-semibold border p-3 w-full sm:w-[45vh]"
               />
             </div>
             <div className="mb-4 sm:mb-0 sm:ml-8">
@@ -147,7 +149,7 @@ const InternshipApk = () => {
                 name="degree"
                 placeholder="Optional"
                 required
-                className="shadow rounded-full text-md font-Poppins text-black font-semibold border p-3 w-full sm:w-[45vh]"
+                className=" border-gray-300 focus:outline-none focus:border-blue-500 rounded-full text-md font-Poppins font-semibold border p-3 w-full sm:w-[45vh]"
               />
             </div>
             <div className="mb-4 sm:mb-0 sm:ml-8">
@@ -158,7 +160,7 @@ const InternshipApk = () => {
                 name="date"
                 placeholder="Optional"
                 required
-                className="shadow rounded-full text-md font-Poppins text-black font-semibold border p-3 w-full sm:w-[45vh]"
+                className=" border-gray-300 focus:outline-none focus:border-blue-500 rounded-full text-md font-Poppins font-semibold border p-3 w-full sm:w-[45vh]"
               />
             </div>
           </div>
@@ -173,7 +175,7 @@ const InternshipApk = () => {
                   type="text"
                   name="Duration"
                   placeholder="Specify months, days, etc.."
-                  className="shadow rounded-full text-md font-Poppins text-black font-semibold border p-3 w-full sm:w-[45vh]"
+                  className=" border-gray-300 focus:outline-none focus:border-blue-500 rounded-full text-md font-Poppins font-semibold border p-3 w-full sm:w-[45vh]"
                 />
               </div>
             </div>
@@ -187,7 +189,7 @@ const InternshipApk = () => {
               type="text"
               name="Reason_For_Applying"
               required
-              className="shadow rounded-lg text-md font-Poppins text-black font-semibold border p-3 md:w-[185vh]"
+              className=" border-gray-300 focus:outline-none focus:border-blue-500 rounded-lg text-md font-Poppins font-semibold border p-3 md:w-[185vh]"
             />
           </div>
 
@@ -199,7 +201,7 @@ const InternshipApk = () => {
               type="text"
               name="Reason_For_Work"
               required
-              className="shadow rounded-lg text-md font-Poppins text-black font-semibold border p-3 md:w-[185vh]"
+              className=" border-gray-300 focus:outline-none focus:border-blue-500 rounded-lg text-md font-Poppins font-semibold border p-3 md:w-[185vh]"
             />
           </div>
 
@@ -212,7 +214,7 @@ const InternshipApk = () => {
                 type="text"
                 name="Experience"
                 placeholder="Optional"
-                className="shadow rounded-full text-md font-Poppins text-black font-semibold border p-3 w-full sm:w-[60vh]"
+                className=" border-gray-300 focus:outline-none focus:border-blue-500 rounded-full text-md font-Poppins font-semibold border p-3 w-full sm:w-[60vh]"
               />
             </div>
             <div className="mb-4 sm:mb-0 sm:ml-8">
@@ -224,20 +226,30 @@ const InternshipApk = () => {
                 type="file"
                 name="Resume"
                 placeholder="Optional"
-                className="shadow rounded-full text-md font-Poppins text-black font-semibold border p-3 w-full sm:w-[45vh]"
+                className=" border-gray-300 focus:outline-none focus:border-blue-500 rounded-full text-md font-Poppins text-gray-800 font-semibold border p-3 w-full sm:w-[45vh]"
               />
             </div>
           </div>
 
         
-          <div className="mt-8">
+          <div className="mt-8 flex flex-row space-x-4 md:space-x-0">
+            <div>
             <button
               type="submit"
               id="submit"
-              className="border bg-red-600 hover:bg-white hover:text-red-500 w-[20vh] p-2 rounded-lg text-white font-Poppins font-bold shadow-xl focus:outline-none focus:ring-1 focus:ring-red-600"
+              className="border bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 w-[20vh] p-2 rounded-full text-white font-Poppins font-bold shadow-lg focus:outline-none focus:ring-1 focus:ring-blue-700"
             >
               Apply
             </button>
+            </div>
+              <div>
+              <button
+              onClick={() => navigate(-1)}
+              className="border shadow-lg bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-full w-[20vh]  md:ml-[10vh] font-Poppins font-bold shadow-lg focus:outline-none focus:ring-1 focus:ring-gray-600"
+              >
+              Back
+             </button>
+              </div>
           </div>
         </div>
       </form>

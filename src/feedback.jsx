@@ -46,11 +46,11 @@ const Feedback = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="md:ml-[6vh] md:mr-[23vh] mx-6 md:mx-0">
-      <div className="md:flex md:justify-start flex justify-start border-t-2 border-b-2 border-red-500 bg-white bg-center md:w-[146vh] w-full mr-16 md:mr-0 ml-2 md:ml-none shadow-2xl md:h-[80vh] h-[70vh] md:mt-8 mt-4">
+    <form onSubmit={handleSubmit} className=" md:ml-[6vh] border-t-2 border-b-2 border-[#330386] rounded-lg shadow-lg md:mr-[16vh] mx-6 md:mx-0 bg-white">
+      <div className="md:flex md:justify-start flex justify-start rounded-lg md:w-[145vh] w-full mr-16 md:mr-0 ml-2 md:ml-12 md:h-[80vh] h-[70vh] md:mt-8 mt-4">
         <div className="mt-8 flex flex-col items-start w-full">
         
-          <label className="block md:ml-28 mb-2 font-Poppins text-base md:text-lg font-regular ml-4">
+          <label className="block md:ml-2 mb-2 font-Poppins text-base md:text-lg font-regular ml-4">
             Name:
           </label>
           <input
@@ -59,11 +59,12 @@ const Feedback = () => {
             placeholder="Name"
             value={formData.name}
             onChange={handleChange}
-            className="text-black font-semibold font-Poppins md:text-[2.1vh] shadow rounded-full text-sm md:text-md font-Poppins border-gray-200 border-2 p-3 md:w-[55vh] w-[90%] md:ml-[14vh] ml-4"
+            required
+            className="text-gray-800 font-semibold focus:outline-none focus:border-blue-500 font-Poppins md:text-[2.1vh] rounded-lg text-sm md:text-md font-Poppins border-gray-300 border p-3 md:w-[55vh] w-[90%] md:ml-[1vh] ml-4"
           />
 
         
-          <label className="block md:ml-28 mb-2 font-Poppins text-base md:text-lg font-regular mt-6 ml-4">
+          <label className="block md:ml-2 mb-2 font-Poppins text-base md:text-lg font-regular mt-6 ml-4">
             Email:
           </label>
           <input
@@ -72,11 +73,12 @@ const Feedback = () => {
             placeholder="Email Address"
             value={formData.email}
             onChange={handleChange}
-            className="text-black font-semibold font-Poppins md:text-[2.1vh] shadow rounded-full text-sm md:text-md font-Poppins p-3 md:w-[55vh] w-[90%] md:ml-[14vh] ml-4 border-gray-200 border-2"
+            required
+            className="text-gray-800 font-semibold font-Poppins md:text-[2.1vh] rounded-lg focus:outline-none focus:border-blue-500 text-sm md:text-md font-Poppins p-3 md:w-[55vh] w-[90%] md:ml-[1vh] ml-4 border-gray-300 border"
           />
 
         
-          <label className="block md:ml-28 mb-2 font-Poppins text-base md:text-lg font-regular mt-6 ml-4">
+          <label className="block md:ml-2 mb-2 font-Poppins text-base md:text-lg font-regular mt-6 ml-4">
             Message:
           </label>
           <textarea
@@ -84,15 +86,16 @@ const Feedback = () => {
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="text-black font-semibold font-Poppins md:text-[2.1vh] shadow border-gray-200 border-2 rounded-lg md:ml-[14vh] w-[90%] md:w-[90vh] p-3 ml-4"
+            required
+            className="text-gray-800 font-semibold font-Poppins md:text-[2.1vh] border-gray-200 border rounded-lg md:ml-[1vh] w-[90%] md:w-[90vh] p-3 ml-4"
             rows={4}
           />
 
     
-          <label className="block md:ml-28 mb-2 font-Poppins text-base md:text-lg font-regular mt-6 ml-4">
+          <label className="block md:ml-2 mb-2 font-Poppins text-base md:text-lg font-regular mt-6 ml-4">
             Rating:
           </label>
-          <div className="md:ml-[14vh] ml-4">
+          <div className="md:ml-[1vh] ml-4">
             <StarRating
               onRatingChange={handleRatingChange}
               initialRating={formData.rating}
@@ -102,7 +105,7 @@ const Feedback = () => {
       
           <button
             type="submit"
-            className="bg-red-600 border focus:outline-none focus:ring-1 focus:ring-red-600 hover:bg-gray-200 hover:text-red-500 text-white font-Poppins font-medium mt-6 md:mt-8 rounded p-2 w-[90%] md:w-[12vh] md:ml-[14vh] ml-4"
+            className="bg-gradient-to-r from-[#330386] to-purple-900 hover:from-purple-900 hover:to-[#330386] rounded-full text-white font-bold border focus:outline-none focus:ring-1 focus:ring-blue-700  font-Poppins font-medium mt-6 md:mt-8 p-2 w-[90%] md:w-[12vh] md:ml-[1vh] ml-4"
           >
             Submit
           </button>
