@@ -30,24 +30,24 @@ const Navigation = () =>{
                <div
                  className={`${
                    isMenuOpen ? "flex" : "hidden"
-                 } md:flex md:mr-[40vh] md:mt-2 flex-col md:flex-row md:bg-none bg-gradient-to-r from-[#1E024D] to-[#1E024D] md:bg-transparent w-full md:w-auto h-[56vh] md:h-auto absolute md:relative mt-[66.9vh] md:mt-0 z-50 items-center pt-2 pb-4 left-0 gap-6 md:gap-8 rounded-lg md:shadow-none shadow`}
+                 } md:flex md:mr-[40vh] md:mt-2 flex-col md:flex-row md:bg-none bg-gradient-to-r from-[#1E024D] to-[#1E024D] md:bg-transparent w-full md:w-auto h-[70vh] md:h-auto absolute md:relative mt-[78vh] md:mt-0 z-50 items-center pt-2 pb-4 left-0 gap-6 md:gap-8 rounded-lg md:shadow-none shadow`}
                >
-                 <Link to="/" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg ">
+                 <Link to="/" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg ">
                    Home
                  </Link>
-                 <a href="#about" className=" font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+                 <a href="#about" className=" font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                    About
                  </a>
-                 <a href="#services" className=" font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+                 <a href="#services" className=" font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                    Services
                  </a>
                  
-                 <button onClick={toggleDropdown} className="font-Poppins text-white font-black hover:text-[#330386] transition-colors duration-300 font-semibold md:text-lg text-sm">Events</button>
+                 <button onClick={toggleDropdown} className="font-Poppins text-white font-black hover:text-purple-900  transition-colors duration-300 font-semibold md:text-lg text-sm">Events</button>
                  
         <div className="flex items-center ml-[26vh] absolute inline-block text-left mt-12">
       {isOpen && (
         
-        <div className="flex flex-col md:mt-[5vh] mt-[21.9vh] absolute mx-[-7vh] md:mx-[0.5vh]">
+        <div className="flex flex-col md:mt-[5vh] mt-[27vh] absolute mx-[-7vh] md:mx-[0.5vh]">
         <FaArrowAltCircleDown className="md:ml-[10vh] text-[#330386] mt-1 md:inline hidden "/>
         <div className="md:w-[21vh] md:ml-2 ml-[-2.5vh] ">
           <div className="flex flex-row">
@@ -65,22 +65,22 @@ const Navigation = () =>{
 
       )}
     </div>
-                 <a href="#donate" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+                 <a href="#donate" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                    Donate
                  </a>
-                 <Link to="/project" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+                 <Link to="/project" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                    Projects
                  </Link>
-                 <Link to="/intern" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+                 <Link to="/intern" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                    Internships
                  </Link>
                  {user?.role === "Admin" && (
-                   <Link to="/admin" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+                   <Link to="/admin" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                      Admin
                    </Link>
                  )}
-                 <a href="#jobs" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
-                   Jobs
+                 <a href="#jobs" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
+                   Products
                  </a>
                   <Link
                      to="/signin"

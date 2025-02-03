@@ -44,7 +44,7 @@ const Projects = () => {
 
       <div className="flex justify-start md:ml-[18vh] sm:ml-[37vh]">
         <div className="flex flex-row mt-4 md:mt-7 mb-4 md:mb-0">
-          <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-3 md:mt-2" />
+          <FaStar className="relative text-2xl shadow-lg text-[#1E024D] mt-3 md:mt-2" />
           <p className="font-Poppins text-[3.5vh] font-bold text-[#330386]">Our Projects</p>
         </div>
       </div>

@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start md:ml-[12vh]">
             <p className="text-white text-lg">Partnered by</p>
             <p className="font-Poppins font-black md:text-[#330386] text-[#1E024D] text-4xl mt-2">E.BRIDGE</p>
-            <button className="text-white text-lg mt-8 hover:text-[#330386] md:mt-[10vh]">
+            <button className="text-white text-lg mt-8 hover:text-purple-200 md:mt-[10vh]">
               Terms & Privacy policy
             </button>
           </div>
@@ -26,15 +26,15 @@ const Footer = () => {
     
           <div className="flex ml-[9vh] md:ml-0 text-white flex-col space-y-4">
             <p className="font-Poppins font-bold text-white ml-[8vh] md:ml-0 text-lg">Contacts:</p>
-            <div className="flex items-center space-x-2 hover:text-[#330386]">
+            <div className="flex items-center space-x-2 hover:text-purple-200">
               <img src={msg} alt="Email" width={30} height={24} />
               <a href="mailto:hbspacelt@gmail.com">hbspacelt@gmail.com</a>
             </div>
-            <div className="flex items-center space-x-2 hover:text-[#330386]">
+            <div className="flex items-center space-x-2 hover:text-purple-200">
               <img src={phone} alt="Phone" width={30} height={24} />
               <a href="tel:+265999916443">Tel: +265 9999 1644 3</a>
             </div>
-            <div className="flex items-center space-x-2 hover:text-[#330386]">
+            <div className="flex items-center space-x-2 hover:text-purple-200">
               <img src={loca} alt="Location" width={30} height={24} />
               <div>
                 <p>Zomba City, Office number 23</p>
@@ -56,7 +56,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-gradient-to-r from-purple-900 to-[#330386] border w-[16vh] ml-[9vh] md:ml-0 text-white p-3 rounded-full shadow-lg md:rounded-l-none md:rounded-r hover:from-[#330386] hover:to-purple-900 transition-all duration-300"
+                className="bg-gradient-to-r from-purple-900 to-[#330386] border w-[16vh] ml-[11vh] md:ml-0 text-white p-3 rounded-full shadow-lg md:rounded-l-none md:rounded-r hover:from-[#330386] hover:to-purple-900 transition-all duration-300"
               >
                 Subscribe
               </button>

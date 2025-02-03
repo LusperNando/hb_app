@@ -44,33 +44,33 @@ const Homepage = () => {
           <div
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } md:flex md:mr-[55vh] md:mt-8 flex-col md:flex-row bg-[#1E024D] md:bg-transparent w-full md:w-auto h-[53vh] md:h-auto absolute md:relative mt-[66.9vh] md:mt-0 z-50 items-center pt-8 pb-4 left-0 gap-6 md:gap-8 rounded-lg md:shadow-none shadow`}
+            } md:flex md:mr-[55vh] md:mt-8 flex-col md:flex-row bg-[#1E024D] md:bg-transparent w-full md:w-auto h-[60vh] md:h-auto absolute md:relative mt-[66.9vh] md:mt-0 z-50 items-center pt-8 pb-4 left-0 gap-6 md:gap-8 rounded-lg md:shadow-none shadow`}
           >
-            <a href="#about" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg ">
+            <a href="#about" className="font-Poppins font-medium text-white hover:text-purple-900 text-sm md:text-lg ">
               About
             </a>
-            <a href="#services" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+            <a href="#services" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Services
             </a>
-            <Link to="/events" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+            <Link to="/events" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Events
             </Link>
-            <a href="#donate" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+            <a href="#donate" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Donate
             </a>
-            <a href="#projects" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+            <a href="#projects" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Projects
             </a>
-            <Link to="/intern" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+            <Link to="/intern" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Internships
             </Link>
             {user?.role === "Admin" && (
-              <Link to="/admin" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
+              <Link to="/admin" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                 Admin
               </Link>
             )}
-            <a href="#jobs" className="font-Poppins font-medium text-white hover:text-[#330386] text-sm md:text-lg">
-              Jobs
+            <a href="#jobs" className="font-Poppins font-medium text-white hover:text-purple-900 text-sm md:text-lg">
+              Products
             </a>
             <Link
               to="/signin"
