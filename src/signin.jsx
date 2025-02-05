@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Navigation from "./nav";
-import Footer from "./Footer.jsx";
+import Footer from "./footer";
 import axios from "axios";
 import { useAuth } from './AuthContext';
 import { FaStar } from "react-icons/fa";

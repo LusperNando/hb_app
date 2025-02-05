@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import post from './images/posture.gif';
 import Navigation from "./nav";
 import axios from "axios";
-import Footer from './Footer';
+import Footer from './footer';
 import { Link } from "react-router-dom";
 import { FaArrowAltCircleRight, FaSmile, FaStar } from "react-icons/fa";
 

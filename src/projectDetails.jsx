@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navigation from "./nav";
 import { FaArrowAltCircleRight, FaHandPointDown, FaHandPointRight, FaStar } from "react-icons/fa";
-import Footer from "./Footer.jsx";
+import Footer from "./footer.jsx";
 
 const ProjectDetails = () => {
   const { id } = useParams();
