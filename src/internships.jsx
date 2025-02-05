@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import post from './images/posture.gif';
 import Navigation from "./nav";
 import axios from "axios";
-import Footer from "./Footer";
-import { Link, useNavigate } from "react-router-dom";
+import Footer from './Footer';
+import { Link } from "react-router-dom";
 import { FaArrowAltCircleRight, FaSmile, FaStar } from "react-icons/fa";
 
 const Internship = () => {
-  const navigate = useNavigate();
   const [internship, setInternship] = useState([]);
   const BASE_URL = "http://localhost:3000";
 
