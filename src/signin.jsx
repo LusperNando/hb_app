@@ -131,7 +131,7 @@ const SignIn = () => {
       </form>
 
       <div className="mt-auto">
-        <Footer />
+        <Footer/>
       </div>
     </div>
   );
