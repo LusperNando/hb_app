@@ -256,7 +256,7 @@ const InternshipApk = () => {
 
 
       <div className="mt-12">
-        <Footer />
+        <Footer/>
       </div>
     </div>
   );
