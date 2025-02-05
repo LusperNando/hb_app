@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import star from "./images/Star 1.svg";
 import Navigation from "./nav";
-import Footer from "./Footer";
+import Footer from "./Footer.jsx";
 import axios from "axios";
 import { useAuth } from './AuthContext';
 import { FaStar } from "react-icons/fa";
