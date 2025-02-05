@@ -88,7 +88,7 @@ const Homepage = () => {
         <div className="flex justify-center md:mt-4 mt-8 ml-2 md:ml-none">
           <div>
             <div className='flex flex-row'>
-            <h1 className="font-Poppins font-black text-white text-2xl md:text-5xl ml-[9vh] md:ml-[12vh] mt-6 md:mt-[14vh]">
+            <h1 className="font-Poppins font-black text-white text-2xl md:text-5xl ml-[8vh] md:ml-[12vh] mt-6 md:mt-[14vh]">
               HB SPACE{' '}
             </h1>
             <h2 className='font-Poppins text-xl font-black text-white border-t-2 w-[2vh]  mt-6 ms-1 rounded border-b-2 border-blue-500 shadow-2xl'> TL</h2>
