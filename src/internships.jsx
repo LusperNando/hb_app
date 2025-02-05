@@ -4,7 +4,6 @@ import Navigation from "./nav";
 import axios from "axios";
 import Footer from "./Footer";
 import { Link, useNavigate } from "react-router-dom";
-import star from "./images/Star 1.svg";
 import { FaArrowAltCircleRight, FaSmile, FaStar } from "react-icons/fa";
 
 const Internship = () => {
