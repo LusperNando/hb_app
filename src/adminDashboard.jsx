@@ -2,7 +2,7 @@ import React from "react";
 import EventForm from "./eventform";
 import star from './images/Star 1.svg';
 import Navigation from "./nav";
-import Footer from "./Footer.jsx";
+import Footer from "./footer";
 import Interns from "./interns";
 import ProjectForm from "./projectForm";
 

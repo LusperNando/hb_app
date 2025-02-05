@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "./nav";
 import axios from "axios";
-import Footer from "./Footer.jsx";
+import Footer from "./footer";
 import { FaStar } from "react-icons/fa";
 
 const Events = () => {
