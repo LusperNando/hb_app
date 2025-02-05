@@ -17,7 +17,7 @@ const Footer = () => {
       
           <div className="flex flex-col items-center md:items-start md:ml-[12vh]">
             <p className="text-white text-lg">Partnered by</p>
-            <p className="font-Poppins font-black md:text-[#330386] text-[#1E024D] text-4xl mt-2">E.BRIDGE</p>
+            <p className="font-Poppins font-black md:text-[#330386] text-black text-4xl mt-2">E.BRIDGE</p>
             <button className="text-white text-lg mt-8 hover:text-purple-200 md:mt-[10vh]">
               Terms & Privacy policy
             </button>
