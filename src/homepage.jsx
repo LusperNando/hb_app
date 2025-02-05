@@ -129,7 +129,7 @@ const Homepage = () => {
             <YouTubeEmbed />
           </div>
           <div>
-            <div className="relative flex flex-row md:justify-center items-center border-b-2 border-[#330386] pb-3 rounded md:w-[81vh] flex-wrap gap-x-1 mt-14 md:mt-[11vh] md:mx-[9vh] mx-[6vh] md:mr-[16vh]">
+            <div className="relative flex flex-row md:justify-center items-center border-b-2 border-[#330386] pb-3 rounded md:w-[81vh] flex-wrap gap-x-1 mt-14 md:mt-[11vh] md:mx-[9vh] mx-[7vh] md:mr-[16vh]">
               <FaStar className='text-2xl shadow-lg text-[#1E024D] mr-8 md:mr-0 ml-[-5vh] md:ml-[-3vh]'/>
               <div className=' md:ml-0 mr-[-8vh] md:mr-0 ml-[-4vh] md:flex-none flex flex-row'>
               <p className="font-Poppins font-regular ms-1 md:ms-0 text-[3vh] md:font-medium text-gray-800">
@@ -142,7 +142,7 @@ const Homepage = () => {
               <p className="font-Poppins text-[3vh] md:font-medium text-gray-800 md:inline hidden">
                 announcements & Adverts of
               </p>
-              <p className="font-Poppins text-[#330386] font-bold md:font-bold text-[3vh] md:relative md:mt-0 md:mr-0 ml-10 md:ml-0">
+              <p className="font-Poppins text-[#330386] font-bold md:font-bold text-[3vh] md:relative md:mt-0 md:mr-0 ml-14 md:ml-0">
                 HB SPACE TL
               </p>
               

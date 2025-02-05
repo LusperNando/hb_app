@@ -57,7 +57,7 @@ const Footer = () => {
               <div>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-purple-900 to-[#330386] border w-[16vh] ml-[10vh] md:ml-0 text-white p-3 rounded-full shadow-lg md:rounded-l-none md:rounded-r hover:from-[#330386] hover:to-purple-900 transition-all duration-300"
+                className="bg-gradient-to-r from-purple-900 to-[#330386] border w-full md:ml-0 text-white p-3 rounded-full shadow-lg md:rounded-l-none md:rounded-r hover:from-[#330386] hover:to-purple-900 transition-all duration-300"
               >
                 Subscribe
               </button>
