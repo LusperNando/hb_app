@@ -39,9 +39,9 @@ const Internship = () => {
       
         <Navigation />
          <div className="flex justify-start md:ml-[20vh]  sm:ml-[37vh]">
-                <div className="flex flex-row md:mt-8 mt-4 mb-4 md:mb-0 ">
-                  <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-3 md:mt-2.5" />
-                  <p className="font-Poppins text-[3.5vh] font-bold ms-1 text-[#330386]">Our Internships</p>
+                <div className="flex flex-row md:mt-8 mt-6 mb-4 md:mb-0 ">
+                  <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-3 md:mt-2.5 md:inline hidden" />
+                  <p className="font-Poppins text-[2.5vh] font-bold ms-1 text-[#330386] ml-[5vh] md:ml-0 mb-4">OUR INTERNSHIPS</p>
                 </div>
           </div>
       
@@ -52,8 +52,8 @@ const Internship = () => {
               Join Our Prestigious Team
             </label>
             <div className="flex flex-row">
-            <FaSmile className="text-2xl mt-[3.5vh] shadow-lg text-[#1E024D] ml-6 md:ml-0"/>
-            <p className="text-xl text-gray-800 font-medium sm:text-[2.7vh] mt-6 mb-8 mr-12 md:ms-1 md:mr-none">
+            <FaSmile className="text-2xl mt-[3.5vh] shadow-lg text-[#1E024D] ml-6 md:ml-0 md:inline hidden"/>
+            <p className="text-xl text-gray-800 font-medium sm:text-[2.7vh] mt-6 mb-8 md:mr-12 md:ms-1 md:mr-none">
               We are a team of innovators, achievers, and turn ideas into reality.
             </p>
             </div>

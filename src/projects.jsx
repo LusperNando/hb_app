@@ -44,7 +44,7 @@ const Projects = () => {
       <div className="flex justify-start md:ml-[18vh] sm:ml-[37vh]">
         <div className="flex flex-row mt-4 md:mt-7 mb-4 md:mb-0">
           <FaStar className="relative text-2xl shadow-lg text-[#1E024D] mt-3 md:mt-2 md:inline hidden" />
-          <p className="font-Poppins text-[3.5vh] font-bold text-[#330386]">Our Projects</p>
+          <p className="font-Poppins text-[2.5vh] font-bold text-[#330386] ml-[2vh] mb-4 md:ml-0 mb:mb-0">OUR PROJECTS</p>
         </div>
       </div>
 
@@ -58,14 +58,14 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex flex-row">
-              <FaHandPointRight className="md:w-8 md:h-8 w-10 h-12 md:mr-1 ml-[-1vh] md:ml-0 mt-[-1vh] md:mt-0 text-[#1E024D]" />
+              <FaHandPointRight className="md:w-8 md:h-8 w-8 h-12 md:mr-1 ml-[-vh] md:ml-0 mt-[-1vh] md:mt-0 text-[#1E024D]" />
               <p className="text-xl mr-[7vh] md:mr-0 text-gray-800 sm:text-[2.7vh] mb-8">
                 Our products are innovative driven,try them out!!.
               </p>
             </div>
             <div className="flex flex-row">
-              <FaHandPointRight className="md:w-8 mr-1 md:ml-0 ml-[-2vh] md:h-8 w-6 h-8 md:mr-2 text-[#1E024D]" />
-              <p className="text-xl text-gray-800 sm:text-[2.7vh] md:ml-0">
+              <FaHandPointRight className="md:w-8 mr-1 md:ml-0 ml-[-0.5vh] md:h-8 w-6 h-8 md:mr-2 text-[#1E024D]" />
+              <p className="text-xl text-gray-800 sm:text-[2.7vh] md:ml-0 ms-5 md:ms-0">
                 Which project Do You recommend?
               </p>
             </div>

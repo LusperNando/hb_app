@@ -41,8 +41,10 @@ const Navigation = () =>{
                  <a href="#services" className=" font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
                    Services
                  </a>
+
+                 <Link to="/up-events" onClick={toggleDropdown} className="font-Poppins text-white font-black hover:text-purple-900  transition-colors duration-300 font-semibold md:text-lg text-sm md:hidden">Events</Link>
                  
-                 <button onClick={toggleDropdown} className="font-Poppins text-white font-black hover:text-purple-900  transition-colors duration-300 font-semibold md:text-lg text-sm">Events</button>
+                 <button onClick={toggleDropdown} className="font-Poppins text-white font-black hover:text-purple-900  transition-colors duration-300 font-semibold md:text-lg text-sm md:inline hidden">Events</button>
                  
         <div className="flex items-center ml-[26vh] absolute inline-block text-left mt-12">
       {isOpen && (
@@ -51,10 +53,10 @@ const Navigation = () =>{
         <FaArrowAltCircleDown className="md:ml-[10vh] text-[#330386] mt-1 md:inline hidden "/>
         <div className="md:w-[21vh] md:ml-2 ml-[-2.5vh] ">
           <div className="flex flex-row">
-        <FaArrowAltCircleRight className="mt-4 text-blue-300 md:hidden"/>
+        <FaArrowAltCircleRight className="mt-4 text-blue-300 hidden"/>
           <ul>
             <li
-              className="px-4 mb-3 md:mb-none ms-1 md:ms-none border-b-2 bg-gradient-to-r from-[#330386] to-purple-900 border-t-4  border-[#330386] hover:from-[#330386] hover:to-purple-900 rounded-lg py-2 text-white font-Poppins font-medium "
+              className="px-4 mb-3 md:mb-none ms-1 md:ms-none border-b-2 bg-gradient-to-r from-[#330386] to-purple-900 border-t-4  border-[#330386] hover:from-[#330386] hover:to-purple-900 rounded-lg py-2 text-white font-Poppins font-medium md:inline hidden"
             >
              <Link to="/up-events">Upcoming <label className="md:inline hidden">Events</label></Link>
             </li>

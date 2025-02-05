@@ -39,7 +39,7 @@ const Events = () => {
       <div className="ml-4 sm:ml-[37vh]">
         <div className="flex flex-row mt-12">
           <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-2 md:mt-2 md:inline hidden" />
-          <p className="font-Poppins text-[3.5vh] font-bold ms-1 text-[#330386]">Our Events</p>
+          <p className="font-Poppins text-[2.5vh] font-bold ms-3 md:ms-0  text-[#330386]">OUR EVENTS</p>
         </div>
         <div className="flex flex-col mt-8 ml-3">
           <label htmlFor="search" className="text-gray-800 text-[2.4vh] my-2">
@@ -57,7 +57,7 @@ const Events = () => {
 
       <div className="flex justify-center font-Poppins font-medium mt-6 ">
         <div className="flex flex-row mr-2">
-          <FaStar className="text-2xl shadow-lg text-[#1E024D] md:mt-1" />
+          <FaStar className="text-2xl shadow-lg text-[#1E024D] md:mt-1 md:inline hidden" />
           <h1 className="text-gray-800 text-[2.5vh] font-medium ms-1">
             Upcoming Events at{" "}
             <label className="text-[#330386] font-bold">Hb Space Tl</label>

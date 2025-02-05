@@ -87,11 +87,11 @@ const Homepage = () => {
 
         <div className="flex justify-center md:mt-4 mt-8 ml-2 md:ml-none">
           <div>
-            <div className='flex flex-col'>
+            <div className='flex flex-row'>
             <h1 className="font-Poppins font-black text-white text-2xl md:text-5xl ml-[9vh] md:ml-[12vh] mt-6 md:mt-[14vh]">
               HB SPACE{' '}
             </h1>
-            <h2 className='font-Poppins md:ml-[25vh] ml-[15vh] text-xl font-black text-white border-t-2 w-[2.8vh] p-[0.2vh] mt-1 rounded border-b-2 border-blue-500 shadow-2xl'> TL</h2>
+            <h2 className='font-Poppins text-xl font-black text-white border-t-2 w-[2vh]  mt-6 ms-1 rounded border-b-2 border-blue-500 shadow-2xl'> TL</h2>
             </div>
             <h2 className="font-Poppins text-3xl md:text-5xl font-black text-white shadow-xl mt-1 md:mt-2">
               Connect & Innovate
@@ -99,7 +99,7 @@ const Homepage = () => {
             <div className="flex justify-center mt-6">
               <Link
                 to="/register"
-                className="bg-gradient-to-r from-[#330386] to-purple-900 text-white px-8 md:mr-12 mr-3 md:mt-2 py-2 rounded-full hover:from-purple-900 hover:to-[#330386] transition-all duration-300 font-Poppins font-medium"
+                className="bg-gradient-to-r from-[#330386] to-purple-900 text-white px-8 md:mr-12 mr-3 md:mt-2 py-2 rounded-full hover:from-purple-900 hover:to-[#330386] transition-all duration-300 font-Poppins ml-4 font-medium"
               >
                 Contact Us
               </Link>
@@ -109,9 +109,9 @@ const Homepage = () => {
       </div>
 
       <div className="md:ml-[6vh] ml-[2vh]">
-        <section className="mr-[2vh] md:px-[21vh] md:mr-0 md:mt-2 mt-6 bg-white p-8 rounded-lg shadow-lg md:mr-[7vh] border-b-2 border-[#330386] border-dashed ">
+        <section className="mr-[2vh] px-2 md:px-[21vh] md:mr-0 md:mt-2 mt-6 bg-white p-8 rounded-lg shadow-lg md:mr-[7vh] border-b-2 border-[#330386] border-dashed ">
           <div className="flex items-center ">
-            <FaStar className='text-[#1E024D] text-2xl shadow-lg'/>
+            <FaStar className='text-[#1E024D] text-2xl shadow-lg md:inline hidden'/>
             <h2 className="text-xl md:text-2xl font-medium text-gray-800">
               ABOUT <label className="font-Poppins font-bold text-[#330386] text-lg md:text-[3vh]">HB SPACE TL</label>
             </h2>
@@ -161,7 +161,7 @@ const Homepage = () => {
        <div className="ml-[6vh] md:ml-[23vh] h-[40vh] md:mr-[20vh] md:mt-20 transform scale-95">
   
   <div className="flex flex-row md:mb-2 items-center md:mt-12 mt-[39vh] md:ml-[1vh] mx-[-6vh]">
-    <FaStar className='text-2xl md:mt-6 shadow-lg text-[#1E024D] md:ml-[-1vh]'/>
+    <FaStar className='text-2xl md:mt-6 shadow-lg text-[#1E024D] md:ml-[-1vh] md:inline hidden'/>
     <h1 className="md:text-[#330386] text-[#330386] md:font-bold font-bold text-[3vh] mt-6 md:mb-0 mb-6">
       HB Space Outline
     </h1>
@@ -200,7 +200,7 @@ const Homepage = () => {
   
       <div className="flex flex-col md:mt-12 ml-[20vh] mt-[58vh]">
         <div className="flex flex-row items-center mt-[5vh] md:ml-[6vh] ml-[-18vh] space-x- mt-4">
-          <FaStar className='text-[#1E024D] text-2xl shadow-lg ml-2'/>
+          <FaStar className='text-[#1E024D] text-2xl shadow-xl ml-2 md:inline hidden'/>
           <p className="font-Poppins text-[3vh] font-bold text-[#330386]">Feedback</p>
         </div>
         <div className="md:flex md:justify-center flex justify-end md:scale-100 transition scale-90">
