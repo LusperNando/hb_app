@@ -68,7 +68,7 @@ const SignIn = () => {
         <div className="border-t-2 border-b-2 border-[#1E024D]  w-full max-w-[90%] sm:max-w-[35%] md:max-w-[40%] lg:max-w-[40%] shadow-xl rounded-lg bg-white">
           <div className="p-4 text-center ">
             <div className="flex justify-start items-center ml-1">
-              <FaStar className="text-2xl shadow-lg text-[#1E024D]" />
+              <FaStar className="text-2xl shadow-lg text-[#1E024D] md:inline hidden" />
               <p className="font-Poppins font-bold text-xl sm:text-2xl text-[#330386]  ms-1">
                 SIGN IN
               </p>

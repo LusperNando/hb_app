@@ -105,7 +105,7 @@ const Account = () => {
         
           <div className=" p-4 text-center ">
             <div className="flex justify-start items-center ml-1">
-              <FaStar className="text-2xl text-[#1E024D] shadow-lg"/>
+              <FaStar className="text-2xl text-[#1E024D] shadow-lg md:inline hidden"/>
               <p className="font-Poppins font-bold ms-1 text-xl sm:text-2xl text-[#330386] ">
                 REGISTER
               </p>

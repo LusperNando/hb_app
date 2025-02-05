@@ -46,8 +46,8 @@ const Feedback = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className=" md:ml-[6vh] border-t-2 border-b-2 border-[#330386] rounded-lg shadow-lg md:mr-[16vh] mx-6 md:mx-0 bg-white">
-      <div className="md:flex md:justify-start flex justify-start rounded-lg md:w-[145vh] w-full mr-16 md:mr-0 ml-2 md:ml-12 md:h-[80vh] h-[70vh] md:mt-8 mt-4">
+    <form onSubmit={handleSubmit} className=" md:ml-[6vh] border-t-2 border-b-2 border-[#330386] rounded-lg shadow-lg md:mr-[16vh] mx-2 md:mx-0 bg-white">
+      <div className="md:flex md:justify-start flex justify-start rounded-lg md:w-[145vh] w-[42vh] mr-14 md:mr-0 md:ml-12 md:h-[80vh] h-[75vh] md:mt-8 mt-4">
         <div className="mt-8 flex flex-col items-start w-full">
         
           <label className="block md:ml-2 mb-2 font-Poppins text-base md:text-lg font-regular ml-4">

@@ -38,7 +38,7 @@ const Events = () => {
 
       <div className="ml-4 sm:ml-[37vh]">
         <div className="flex flex-row mt-12">
-          <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-2 md:mt-2" />
+          <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-2 md:mt-2 md:inline hidden" />
           <p className="font-Poppins text-[3.5vh] font-bold ms-1 text-[#330386]">Our Events</p>
         </div>
         <div className="flex flex-col mt-8 ml-3">

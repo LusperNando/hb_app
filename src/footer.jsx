@@ -54,12 +54,14 @@ const Footer = () => {
                 placeholder="Enter email Address"
                 className="p-2 w-full md:w-64 text-md text-gray-800 font-medium rounded-full md:rounded-l md:rounded-r-none focus:outline-none"
               />
+              <div>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-purple-900 to-[#330386] border w-[16vh] ml-[11vh] md:ml-0 text-white p-3 rounded-full shadow-lg md:rounded-l-none md:rounded-r hover:from-[#330386] hover:to-purple-900 transition-all duration-300"
+                className="bg-gradient-to-r from-purple-900 to-[#330386] border w-[16vh] ml-[10vh] md:ml-0 text-white p-3 rounded-full shadow-lg md:rounded-l-none md:rounded-r hover:from-[#330386] hover:to-purple-900 transition-all duration-300"
               >
                 Subscribe
               </button>
+              </div>
             </div>
             <div className="flex md:space-x-4 ml-[-4vh] space-x-12 mt-4 md:ml-[-1vh]">
               <a
