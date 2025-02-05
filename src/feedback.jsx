@@ -87,7 +87,7 @@ const Feedback = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="text-gray-800 font-semibold font-Poppins md:text-[2.1vh] border-blue-500  rounded-lg md:ml-[1vh] w-[93%] md:w-[90vh] p-3 ml-4"
+            className="text-gray-800 font-semibold font-Poppins md:text-[2.1vh] border border-gray-300 focus:outline-none focus:border-blue-500  rounded-lg md:ml-[1vh] w-[93%] md:w-[90vh] p-3 ml-4"
             rows={4}
           />
 

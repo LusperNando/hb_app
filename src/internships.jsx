@@ -41,7 +41,7 @@ const Internship = () => {
          <div className="flex justify-start md:ml-[20vh]  sm:ml-[37vh]">
                 <div className="flex flex-row md:mt-8 mt-6 mb-4 md:mb-0 ">
                   <FaStar className="text-2xl shadow-lg text-[#1E024D] mt-3 md:mt-2.5 md:inline hidden" />
-                  <p className="font-Poppins text-[2.5vh] font-bold ms-1 text-[#330386] ml-[5vh] md:ml-0 mb-4">OUR INTERNSHIPS</p>
+                  <p className="font-Poppins text-[2.5vh] font-bold ms-12 text-[#330386] md:ms-0 mb-4">OUR INTERNSHIPS</p>
                 </div>
           </div>
       

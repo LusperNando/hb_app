@@ -50,15 +50,15 @@ const Homepage = () => {
             <a href="#services" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Services
             </a>
-            <Link to="/events" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
+            <Link to="/up-events" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Events
             </Link>
             <a href="#donate" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Donate
             </a>
-            <a href="#projects" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
+            <Link to="/project" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Projects
-            </a>
+            </Link>
             <Link to="/intern" className="font-Poppins font-medium text-white hover:text-purple-900  text-sm md:text-lg">
               Internships
             </Link>
@@ -99,7 +99,7 @@ const Homepage = () => {
             <div className="flex justify-center mt-6">
               <Link
                 to="/register"
-                className="bg-gradient-to-r from-[#330386] to-purple-900 text-white px-8 md:mr-12 mr-3 md:mt-2 py-2 rounded-full hover:from-purple-900 hover:to-[#330386] transition-all duration-300 font-Poppins ml-4 font-medium"
+                className="bg-gradient-to-r from-[#330386] to-purple-900 text-white px-8 md:mr-12 mr-5 md:mt-2 py-2 rounded-full hover:from-purple-900 hover:to-[#330386] transition-all duration-300 font-Poppins ml-4 font-medium"
               >
                 Contact Us
               </Link>
