@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import logo from './images/HBspace.jpg';
 import { Link } from 'react-router-dom';
-import star from './images/Star 1.svg';
 import YouTubeEmbed from './youtubeEmbed';
 import ScrollingText from './scrollText';
 import Footer from './Footer';
 import Feedback from './feedback';
-import line from './images/line.svg';
 import { useAuth } from './AuthContext';
 import { FiMenu, FiMinus } from 'react-icons/fi';
 import { FaGripLines, FaLine, FaStar, FaStream } from 'react-icons/fa';
