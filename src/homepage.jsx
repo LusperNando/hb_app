@@ -3,7 +3,7 @@ import logo from './images/HBspace.jpg';
 import { Link } from 'react-router-dom';
 import YouTubeEmbed from './youtubeEmbed';
 import ScrollingText from './scrollText';
-import Footer from './Footer';
+import Footer from './Footer.jsx';
 import Feedback from './feedback';
 import { useAuth } from './AuthContext';
 import { FiMenu, FiMinus } from 'react-icons/fi';
