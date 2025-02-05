@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import star from "./images/Star 1.svg";
 import Navigation from "./nav";
 import axios from "axios";
 import Footer from "./Footer";
